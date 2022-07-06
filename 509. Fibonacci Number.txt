@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int num = 0;
+    int fib(int n) {
+        if(n<2) return n;
+        
+        num = fib(n-1) + fib(n-2);
+        return num;
+    }
+};
+
+/* https://leetcode.com/problems/fibonacci-number/ */
